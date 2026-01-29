@@ -24,7 +24,7 @@ const QuotePage = () => {
   }, []);
 
   if (error) return <p style={{ color: "red", textAlign: "center" }}>Error: {error}</p>;
-  if (!quote) return <p style={{ textAlign: "center", fontStyle: "italic" }}>Loading...</p>;
+  if (!quote) return <p style={{ textAlign: "left", fontStyle: "italic" }}>Loading...</p>;
 
   return (
     <div
