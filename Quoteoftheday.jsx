@@ -24,7 +24,7 @@ const QuotePage = () => {
   }, []);
 
   if (error) return <p style={{ color: "red", textAlign: "center" }}>Error: {error}</p>;
-  if (!quote) return <p style={{ textAlign: "center", fontStyle: "italic" }}>Loading...</p>;
+  if (!quote) return <p style={{ textAlign: "left", fontStyle: "italic" }}>Loading...</p>;
 
   return (
     <div
@@ -40,7 +40,7 @@ const QuotePage = () => {
         textAlign: "center"              // center text
       }}
     >
-      <h2 style={{ color: "#333", marginBottom: "20px" }}>Quote of the Day</h2>
+      <h2 style={{ color: "#333", marginBottom: "20px" }}>Quote of the Moment</h2>
       <blockquote style={{ fontSize: "1.5rem", maxWidth: "600px" }}>
         “{quote.q}”
         <footer style={{ marginTop: "10px", fontStyle: "italic" }}>— {quote.a}</footer>
