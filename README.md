@@ -1,3 +1,3 @@
 
 # History-Events-Quotes
-[Live Demo](https://dailyhistoricaleventsandquotes.netlify.app)
+[Live Demo](https://events-quotes.netlify.app)
