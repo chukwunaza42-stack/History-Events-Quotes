@@ -7,7 +7,7 @@ const QuotePage = () => {
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        const response = await fetch("https://history-events-quotes.onrender.com");
+        const response = await fetch("http://localhost:5000/api/quote");
 
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
