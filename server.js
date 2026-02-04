@@ -5,7 +5,12 @@ import cors from "cors";
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+// Enable CORS for your Netlify frontend
+app.use(cors({
+  origin: "https://events-quotes.netlify.app",   // allow requests from your frontend
+  methods: ["GET", "POST", "PUT", "DELETE"],     // allowed HTTP methods
+  credentials: true                              // allow cookies/headers if needed
+}));
 
 app.get("/api/quote", async (req, res) => {
   try {
